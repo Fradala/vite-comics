@@ -5,36 +5,9 @@
     </section>
     <nav class="navigation">
         <ul>
-            <li>
-                character
-            </li>
-            <li>
-                comix
-            </li>
-            <li>
-                movie
-            </li>
-            <li>
-                tv
-            </li>
-            <li>
-                game
-            </li>
-            <li>
-                collectible
-            </li>
-            <li>
-                videos
-            </li>
-            <li>
-                fans
-            </li>
-            <li>
-                news
-            </li>
-            <li>
-                shop
-            </li>
+           <li v-for="link in navLink" :class="(link.active) ? 'active' : '' ">
+                {{ link.content }}
+           </li>
         </ul>
     </nav>
    </header>
@@ -42,6 +15,72 @@
 <script>
 export default {
     name: 'HeaderDc',
+    data() {
+        return {
+            navLink : [
+                {
+                    content: 'characther',
+                    url: '#',
+                    active: false,
+
+                },
+                {
+                    content: 'comix',
+                    url: '#',
+                    active: true,
+                    
+                },
+                {
+                    content: 'charr',
+                    url: '#',
+                    active: false,
+
+                },
+                {
+                    content: 'char',
+                    url: '#',
+                    active: false,
+
+                },
+                {
+                    content: 'chara',
+                    url: '#',
+                    active: false,
+
+                },
+                {
+                    content: 'char',
+                    url: '#',
+                    active: false,
+
+                },
+                {
+                    content: 'comix',
+                    url: '#',
+                    active: false,
+                    
+                },
+                {
+                    content: 'char',
+                    url: '#',
+                    active: false,
+
+                },
+                {
+                    content: 'charac',
+                    url: '#',
+                    active: false,
+
+                },
+                {
+                    content: 'chara',
+                    url: '#',
+                    active: false,
+
+                },
+            ]
+        }
+    }
     
 }
 </script>
@@ -51,9 +90,32 @@ export default {
 
 
 header{
-    @include flex(row, space-between, center)
+    @include flex(row, space-between, center);
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
 
-   .navigation 
+    section.logo{
+        width: 40px
+    }
+
+   nav.navigation > ul{
+        @include flex (row, center, center);
+        list-style-type: none;
+
+        li{
+            margin-right: 15px;
+            text-transform: uppercase;
+            font-size: 12px;
+
+            &.active{
+                color: rgb(0, 81, 255);
+            }
+        }
+
+   }
+
+   
 
     
 }
