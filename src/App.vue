@@ -1,7 +1,7 @@
 <template lang="">
-  <div>
-    
-  </div>
+  <HeaderDc/>
+  <MainDc/>
+  <FooterDc/>
 </template>
 <script>
 import HeaderDc from './components/HeaderDc.vue';
