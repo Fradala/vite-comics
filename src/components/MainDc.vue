@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name: 'MainCd',
+    name: 'MainDc',
 }
 </script>
 <style lang="scss" scoped>

@@ -4,16 +4,16 @@
   </div>
 </template>
 <script>
-import HeaderCd from './components/HeaderCd.vue';
-import MainCd from './components/MainCd.vue';
-import FooterCd from './components/FooterCd.vue';
+import HeaderDc from './components/HeaderDc.vue';
+import MainDc from './components/MainDc.vue';
+import FooterDc from './components/FooterDc.vue';
 
 export default {
   name: 'App',
   components:{
-    HeaderCd,
-    MainCd,
-    FooterCd
+    HeaderDc,
+    MainDc,
+    FooterDc
   }
   
 }
