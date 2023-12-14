@@ -5,14 +5,20 @@
 </template>
 <script>
 import HeaderCd from './components/HeaderCd.vue';
+import MainCd from './components/MainCd.vue';
+import FooterCd from './components/FooterCd.vue';
 
 export default {
+  name: 'App',
   components:{
-    HeaderCd
+    HeaderCd,
+    MainCd,
+    FooterCd
   }
   
 }
 </script>
-<style lang="©">
+<style lang="scss">
+  @use './styles/general.scss' as *;
   
 </style>
