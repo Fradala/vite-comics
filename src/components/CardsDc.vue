@@ -1,22 +1,25 @@
 <template>
+   
     <article>
-        <h2>
-            carte
-        </h2>
+       <img :src="imageSrc" alt="">
+       <p>
+            {{ series }}
+        </p>
 
     </article>
+   
     
 </template>
 <script>
 export default {
     name: 'CardsDc',
-    props: {
+    props: [
         'imageSrc',
         'price',
         'series',
         'type'
-
-    }
+    ]
+    
     
 }
 </script>
@@ -29,9 +32,21 @@ article{
     
     width: calc((100% / 6) - 20px);
     margin-right: 10px;
-    height: 100px;
-    border: 2px solid white;
+    
+    
     margin-top: 20px;
+
+
+    p{
+        font-size: 13px;
+        text-transform: uppercase ;
+    }
+
+    img{
+        width: 100%;
+
+        
+    }
 }
     
 </style>

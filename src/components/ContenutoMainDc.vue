@@ -1,5 +1,6 @@
 <template lang="">
     <section class="content">
+       
        <CardsDc v-for="card in listaDc"
             :imageSrc="card.thumb" :price="card.price" :series="card.series" :type="card.type"
        />
@@ -104,7 +105,8 @@ section.content{
         margin: 0 auto;
         color: white;
         flex-wrap: wrap;
-        @include flex(row, start, start)
+        @include flex(row, start, stretch);
         
-    }
+  
+}
 </style>

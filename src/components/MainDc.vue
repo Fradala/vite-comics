@@ -1,5 +1,8 @@
 <template lang="">
     <main>
+        <article>
+            <img src="../assets/img/jumbotron.jpg" alt="">
+        </article>
         <ContenutoMainDc/>
     </main>
    
@@ -19,7 +22,16 @@ export default {
 
 main{
     background-color: black;
-    padding: 2rem;
+    
+
+
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: start;
+        
+    }
 }
     
 </style>
