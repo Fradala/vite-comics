@@ -2,7 +2,11 @@
     <main>
         <article>
             <img src="../assets/img/jumbotron.jpg" alt="">
+            <p>
+                current series
+            </p>
         </article>
+        
         <ContenutoMainDc/>
     </main>
    
@@ -23,15 +27,30 @@ export default {
 main{
     background-color: black;
     
+    article{
+        position: relative;
+    }
 
 
     img{
         width: 100%;
         height: 200px;
         object-fit: cover;
-        object-position: start;
+        object-position: center;
         
     }
+
+    p{
+        position: absolute;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        background-color:rgb(0, 89, 255);
+        top: 160px;
+        left: 150px;
+    }
+
+    
 }
     
 </style>
