@@ -31,7 +31,7 @@
                 </ul>
                 <ul>
                     <h3>
-                        dc comics
+                        dc 
                     </h3>
                     <li>
                         cose
@@ -57,7 +57,7 @@
                 </ul>
                 <ul>
                     <h3>
-                        dc comics
+                        sites
                     </h3>
                     <li>
                         cose
@@ -83,7 +83,7 @@
                 </ul>
                 <ul>
                     <h3>
-                        dc comics
+                        shop
                     </h3>
                     <li>
                         cose
@@ -120,7 +120,24 @@
            
     </main>
     <footer>
-        
+        <div class="container-footer">
+           <div class="sing-up">
+                <button>
+                    sing-up now
+                </button>
+           </div>
+           <div class="follow">
+                <p>
+                    follow us
+                </p>
+                <img src="../assets/img/footer-facebook.png" alt="facebook">
+                <img src="../assets/img/footer-periscope.png" alt="periscope">
+                <img src="../assets/img/footer-pinterest.png" alt="pinterest">
+                <img src="../assets/img/footer-twitter.png" alt="twitter">
+                <img src="../assets/img/footer-youtube.png" alt="youtube">
+           </div>
+        </div>
+
     </footer>
 </template>
 <script>
@@ -160,10 +177,11 @@ main{
     }
 
     .info{
+
         color: white;
-        width: calc(100% / 3);
+        width: 50%;
         flex-wrap: wrap;
-        @include flex(row, center, center);
+        @include flex(row, start, center);
 
         h3{
             text-transform: uppercase;
@@ -174,6 +192,43 @@ main{
         }
     }
 
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    padding: 2rem;
+    
+    .container-footer{
+        width: 70%;
+        margin: 0 auto;
+        @include flex(row, space-between, center);
+
+
+    button{
+            color: white;
+            border: 1px solid blue;
+            background-color: transparent;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+
+
+    .follow{
+        @include flex(row, center, center);
+
+        p{
+            text-transform: uppercase;
+            color: rgb(0, 98, 255);
+            margin-right: 20px;
+        }
+
+        img{
+            margin-right: 20px;
+        }
+    }
+
+    }
 }
     
 </style>
